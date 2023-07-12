@@ -1,0 +1,6 @@
+print('Enter the marks scored by student')
+written=float(input('Written Test: '))
+lab=float(input('Lab Exams: '))
+assignments=float(input('Assignments: '))
+grade=((written*70)/100)+((lab*20)/100)+((assignments*10)/100)
+print('Grade of student: ',grade)
