@@ -27,14 +27,3 @@ for i in range(len(nums)):
     second =second * nums[len(nums)-i-1]
     # print(first, second)
     print(result)
-
-length=len(nums)
-sol=[1]*length
-pre = 1
-post = 1
-for i in range(len(nums)):
-    sol[i] *= pre
-    pre = pre*nums[i]
-    sol[len(nums)-i-1] *= post
-    post = post*nums[len(nums)-i-1]
-    print(sol)
