@@ -1,9 +1,18 @@
+#both common_element working
+
+# def common_element(arr,common):
+#     for num in arr:
+#         if num in common:
+#             common[num] += 1
+#         else:
+#             common[num] = 1
+#     return common
+
 def common_element(arr,common):
-    for num in arr:
-        if num in common:
-            common[num] += 1
-        else:
-            common[num] = 1
+    for i in range(len(arr)):
+        if arr[i] in common:
+            common[arr[i]]+=1
+        else: common[arr[i]]=1
     return common
 
 common ={}
