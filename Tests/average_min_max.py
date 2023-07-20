@@ -7,5 +7,5 @@ prev_max = 0
 for i in range(len(nums)):
     if min>prev_min and min>nums[i]:
         min = nums[i]
-    if max<prev_max and max<nums[i]:
+    # if max<prev_max and max<nums[i]:
         
