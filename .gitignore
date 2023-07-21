@@ -1,17 +1,6 @@
 Tests/average_min_max.py
+Tests/tempCodeRunnerFile.py
 Assignments.code-workspace
 
-# Ignore pycache directories
-__pycache__/
-
-# Ignore virtual environment directory
-venv/
-
-# Ignore VSCode settings files
-.vscode/settings.json
-
-# Ignore other generated files or directories
-*.log
-*.log.*
-*.pyc
-*.DS_Store
+Data structure\.vscode
+Tests\LC_20_Valid_parenthesis.py

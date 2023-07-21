@@ -10,5 +10,8 @@ def count_word(para):
 paragraph = input("Enter paragraph: ").strip().split()
 print(paragraph)
 counter = count_word(paragraph)
+total_count=0
 for word,count in counter.items():
     print(word+" : ",count)
+    total_count = total_count + count
+print(f"total count of words = {total_count}")
