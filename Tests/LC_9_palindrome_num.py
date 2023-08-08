@@ -1,15 +1,17 @@
-x = 1234321
+x = 123344567
 def palindrome(x):
-    safe = x
+    if not x: return True
     comp = 0
     while(x!=0):
-        rem=x%10
-        comp = comp*10 + rem
+        comp = comp*10 + x%10
+        if not comp:break
         # print(f"x: {x} comp: {comp}")
+        if (x == comp or x<comp): break
         x = x//10
-    if safe == comp:
-        return True
-    else:return False
+        # print(f"x: {x} comp: {comp}")
+        if (x == comp): break
+    if (x==comp): return True
+    return False
 
 bool_val = palindrome(x)
 print(bool_val)
