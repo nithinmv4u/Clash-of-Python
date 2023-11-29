@@ -1,3 +1,4 @@
+from functools import reduce
 class Solution(object):
     def romanToInt(self, s):
         numerals = { 'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000 }
@@ -15,6 +16,14 @@ class Solution(object):
             else:result = 0
             print(result, prev)
         return result
+    
+    #not working
+    def romanToInt2(self, s):
+        numerals = { 'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000 }
+        num_list = [numerals.get(x) for x in s]
+        print(num_list)
+        result = reduce(lambda x, y : x - y if x > y else x + y, num_list[::-1])
+        print(result)
 
 # roman = "III"
 roman = "LVIII"
@@ -22,3 +31,4 @@ roman = "LVIII"
 result = Solution().romanToInt(roman)
 
 print(result) if result > 0 else print("not roman")
+result = Solution().romanToInt2(roman)

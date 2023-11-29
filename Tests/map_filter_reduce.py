@@ -19,4 +19,6 @@ numbers = [2, 3, 4, 5]
 product = reduce(lambda x, y: x * y, numbers)
 print(product)  # Output: 120
 
-
+numbers = [10, 1, 100, 10]
+roman_sum = reduce(lambda x, y: x - y if x > y else x + y, numbers)
+print(roman_sum)
